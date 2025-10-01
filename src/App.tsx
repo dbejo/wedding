@@ -45,17 +45,17 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col items-center min-h-screen justify-evenly mt-10">
+      <div className="flex flex-col items-center min-h-screen justify-evenly mt-10 mx-5">
         <div>
-          <div className="md:w-128 w-96 flex justify-end">
-            <h1 style={{ color: goldColor }} className={`text-4xl font-medium -mb-5 -mr-5 z-10 font-[cursive]`}>Eszter<br />&nbsp;&nbsp;& Dávid</h1>
+          <div className="md:w-128 w-full flex justify-end">
+            <h1 style={{ color: goldColor }} className={`text-4xl font-medium -mb-5 -mr-2 z-10 font-[cursive]`}>Eszter<br />&nbsp;&nbsp;& Dávid</h1>
           </div>
-          <img src={selfie} className="md:w-128 w-96 rounded-full shadow-xl" />
-          <div className="md:w-128 w-96 flex justify-start">
-            <h2 style={{ color: goldColor }} className={`text-4xl font-medium -mt-5 -ml-5 font-[cursive]`}>&nbsp;&nbsp;2026<br />05.19</h2>
+          <img src={selfie} className="md:w-128 w-full rounded-full shadow-xl" />
+          <div className="md:w-128 w-full flex justify-start">
+            <h2 style={{ color: goldColor }} className={`text-4xl font-medium -mt-5 -ml-2 font-[cursive]`}>&nbsp;&nbsp;2026<br />05.19</h2>
           </div>
         </div>
-        <div className="md:w-2/3 w-96 flex flex-col justify-start gap-5">
+        <div className="md:w-2/3 w-full flex flex-col justify-start gap-5">
           <a href="#rsvp-form" className='mx-auto my-5'><button type='button' style={{ backgroundColor: mainColor }} className='text-white py-3 px-5 rounded-full text-xl hover:cursor-pointer hover:grayscale-30 transition-all shadow-lg'>Visszajelzés</button></a>
           <p className='text-lg text-justify leading-relaxed font-thin'>Szeretnénk, ha ezen a különleges napon velünk ünnepelnétek, és együtt osztoznánk az örömben és boldogságban. Nagyon fontos számunkra, hogy a számunkra legkedvesebb emberek körében élhessük át ezt a pillanatot, hiszen nélkületek nem lenne teljes az ünnep.</p>
         </div>
@@ -72,7 +72,7 @@ function App() {
             </div>
             <div className="hidden md:block border-l border-gray-300 h-9/10 mx-4"></div>
             <div className='md:w-1/2 w-full flex justify-center'>
-              <img src={selfie1} className="w-96 h-96 object-cover rounded-full shadow-xl" />
+              <img src={selfie1} className="w-84 md:w-96 h-84 md:h-96 object-cover rounded-full shadow-xl" />
             </div>
           </div>
           <div className='flex flex-col md:flex-row-reverse w-full justify-evenly items-center'>
@@ -82,7 +82,7 @@ function App() {
             </div>
             <div className="hidden md:block border-l border-gray-300 h-9/10 mx-4"></div>
             <div className='md:w-1/2 w-full flex justify-center'>
-              <img src={selfie2} className="w-96 h-96 object-cover rounded-full shadow-xl" />
+              <img src={selfie2} className="w-84 md:w-96 h-84 md:h-96 object-cover rounded-full shadow-xl" />
             </div>
           </div>
           <div className='flex flex-col md:flex-row w-full justify-evenly items-center'>
@@ -92,7 +92,7 @@ function App() {
             </div>
             <div className="hidden md:block border-l border-gray-300 h-9/10 mx-4"></div>
             <div className='md:w-1/2 w-full flex justify-center'>
-              <img src={selfie3} className="w-96 h-96 object-cover rounded-full shadow-xl" />
+              <img src={selfie3} className="w-84 md:w-96 h-84 md:h-96 object-cover rounded-full shadow-xl" />
             </div>
           </div>
           <div className='flex flex-col md:flex-row-reverse w-full justify-evenly items-center'>
@@ -102,7 +102,7 @@ function App() {
             </div>
             <div className="hidden md:block border-l border-gray-300 h-9/10 mx-4"></div>
             <div className='md:w-1/2 w-full flex justify-center'>
-              <img src={selfie4} className="w-96 h-96 object-cover rounded-full shadow-xl" />
+              <img src={selfie4} className="w-84 md:w-96 h-84 md:h-96 object-cover rounded-full shadow-xl" />
             </div>
           </div>
         </div>
@@ -111,14 +111,14 @@ function App() {
         <div className='md:w-2/3 w-full flex md:flex-row flex-col-reverse items-center my-10'>
           <div className='md:w-1/2 w-full flex flex-col justify-start'>
             <h2 className="text-4xl font-bold mt-5 md:text-start text-center text-white">Helyszín</h2>
-            <p className='text-lg mt-5 font-light md:text-start text-center text-white'>A szertartás és a vacsora helyszíne a <a href="https://www.google.com/maps/?q=mettrin" className="underline">METTRIN</a>, melynek címe:<br /><a href="https://www.google.com/maps/?q=mettrin" className="underline">2653 Bánk, Tóparti sétány 2.</a></p>
+            <p className='text-lg mt-5 font-light md:text-start text-center text-white mx-5'>A szertartás és a vacsora helyszíne a <a href="https://www.google.com/maps/?q=mettrin" className="underline">METTRIN</a>, melynek címe:<br /><a href="https://www.google.com/maps/?q=mettrin" className="underline">2653 Bánk, Tóparti sétány 2.</a></p>
           </div>
           <div className='w-full flex justify-center md:-mr-30 md:px-0 px-5 md:mt-0 -mt-20'>
             <img src={mettrin1} className="md:h-128 object-cover rounded-lg shadow-xl" />
           </div>
         </div>
       </div>
-      <div className='w-full flex flex-col items-center my-10'>
+      <div className='w-full flex flex-col items-center my-10 mx-5'>
         <div className='md:w-2/3 w-96 flex flex-col'>
           <h2 className="text-4xl font-bold  mb-1 text-gray-700">Szállás</h2>
           <p className='text-lg text-justify leading-relaxed font-thin mb-5'>A közeli szálláslehetőségek:</p>
@@ -150,7 +150,7 @@ function App() {
       <div style={{ backgroundColor: mainColor }} className='w-full h-40 items-center flex justify-center my-10 shadow-lg'>
         <h2 className="text-4xl font-bold text-center my-5 text-white">Gyakran Ismételt Kérdések</h2>
       </div>
-      <div className='w-full flex justify-center mb-10'>
+      <div className='w-full flex justify-center mb-10 mx-5'>
         <div className='md:w-2/3 w-96 flex flex-col text-gray-700 gap-5'>
           <Faq question="Mi a dress code?" answer="Kérjük, hogy az esküvőre elegáns, de kényelmes öltözetben érkezzetek. A hölgyek számára ajánlott a hosszú alkalmi ruha, az uraknak pedig zakó viselése. A fehér és a piros színek kerülendők, mivel ezek a menyasszony ruháját idézhetik." />
           <Faq question="Hol lehet parkolni?" answer="A rendezvény helyszíne mellett található egy parkoló, ahol a vendégek ingyenesen parkolhatnak." />
@@ -165,7 +165,7 @@ function App() {
       </div>
       <div className='flex flex-col items-center mt-20'>
         {timeLeft != null ? <p className='font-thin text-xl text-gray-700'>Már csak</p> : null}
-        <p className='md:text-7xl text-4xl font-bold text-gray-700'>{timeLeft ? `${timeLeft.days} nap ${timeLeft.hours} óra ${timeLeft.minutes} perc` : "Az esemény elkezdődött!"}</p>
+        <p className='md:text-7xl text-3xl font-bold text-gray-700'>{timeLeft ? `${timeLeft.days} nap ${timeLeft.hours} óra ${timeLeft.minutes} perc` : "Az esemény elkezdődött!"}</p>
         {timeLeft != null ? <p className='font-thin text-xl text-gray-700'>van hátra az esküvőig!</p> : null}
       </div>
       <div className="w-full bg-[url('./assets/mettrinrajz.png')] bg-cover bg-center h-256">
