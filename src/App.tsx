@@ -118,8 +118,8 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='w-full flex flex-col items-center my-10 mx-5'>
-        <div className='md:w-2/3 w-96 flex flex-col'>
+      <div className='flex flex-col items-center my-10 mx-5'>
+        <div className='md:w-2/3 w-full flex flex-col'>
           <h2 className="text-4xl font-bold  mb-1 text-gray-700">Szállás</h2>
           <p className='text-lg text-justify leading-relaxed font-thin mb-5'>A közeli szálláslehetőségek:</p>
           <div className='flex flex-col md:flex-row w-full gap-5 items-stretch'>
@@ -150,15 +150,15 @@ function App() {
       <div style={{ backgroundColor: mainColor }} className='w-full h-40 items-center flex justify-center my-10 shadow-lg'>
         <h2 className="text-4xl font-bold text-center my-5 text-white">Gyakran Ismételt Kérdések</h2>
       </div>
-      <div className='w-full flex justify-center mb-10 mx-5'>
-        <div className='md:w-2/3 w-96 flex flex-col text-gray-700 gap-5'>
+      <div className='flex justify-center mb-10 mx-5'>
+        <div className='md:w-2/3 w-full flex flex-col text-gray-700 gap-5'>
           <Faq question="Mi a dress code?" answer="Kérjük, hogy az esküvőre elegáns, de kényelmes öltözetben érkezzetek. A hölgyek számára ajánlott a hosszú alkalmi ruha, az uraknak pedig zakó viselése. A fehér és a piros színek kerülendők, mivel ezek a menyasszony ruháját idézhetik." />
           <Faq question="Hol lehet parkolni?" answer="A rendezvény helyszíne mellett található egy parkoló, ahol a vendégek ingyenesen parkolhatnak." />
           <Faq question="Mit kértek ajándékba?" answer="Tárgyi ajándékot nem kérünk, eladó azonban a menyasszony: egy táncért cserébe bárki viheti egy körre. A menyasszonytáncon összegyűlt adományok pedig a nászutunk alapját adják majd." />
         </div>
       </div>
       <div className="flex flex-col items-center min-h-screen justify-evenly">
-        <div className="md:w-2/3 w-96 flex flex-col justify-evenly flex-1 my-5">
+        <div className="md:w-2/3 w-full flex flex-col justify-evenly flex-1 my-5">
           <p className='text-lg text-center font-thin'>Kérjük, hogy részvételi szándékotokat a következő űrlap kitöltésével jelezzétek:</p>
           <iframe id='rsvp-form' src="https://docs.google.com/forms/d/e/1FAIpQLScYw5FcQ8lFwXr8iPbwPGoAA3cDRgf-qjbHDDHPD2Ku3H-jiA/viewform?embedded=true" className='md:h-[1000px] h-[1300px] w-full border-0'>Betöltés…</iframe>
         </div>
