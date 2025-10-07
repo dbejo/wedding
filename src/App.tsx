@@ -111,7 +111,7 @@ function App() {
         <div className='md:w-2/3 w-full flex md:flex-row flex-col-reverse items-center my-10'>
           <div className='md:w-1/2 w-full flex flex-col justify-start'>
             <h2 className="text-4xl font-bold mt-5 md:text-start text-center text-white">Helyszín</h2>
-            <p className='text-lg mt-5 font-light md:text-start text-center text-white mx-5'>A szertartás és a vacsora helyszíne a <a href="https://www.google.com/maps/?q=mettrin" className="underline">METTRIN</a>, melynek címe:<br /><a href="https://www.google.com/maps/?q=mettrin" className="underline">2653 Bánk, Tóparti sétány 2.</a></p>
+            <p className='text-lg mt-5 font-light md:text-start text-center text-white md:mx-0 mx-5'>A szertartás és a vacsora helyszíne a <a href="https://www.google.com/maps/?q=mettrin" className="underline">METTRIN</a>, melynek címe:<br /><a href="https://www.google.com/maps/?q=mettrin" className="underline">2653 Bánk, Tóparti sétány 2.</a></p>
           </div>
           <div className='w-full flex justify-center md:-mr-30 md:px-0 px-5 md:mt-0 -mt-20'>
             <img src={mettrin1} className="md:h-128 object-cover rounded-lg shadow-xl" />
@@ -168,7 +168,7 @@ function App() {
         <p className='md:text-7xl text-3xl font-bold text-gray-700'>{timeLeft ? `${timeLeft.days} nap ${timeLeft.hours} óra ${timeLeft.minutes} perc` : "Az esemény elkezdődött!"}</p>
         {timeLeft != null ? <p className='font-thin text-xl text-gray-700'>van hátra az esküvőig!</p> : null}
       </div>
-      <div className="w-full bg-[url('./assets/mettrinrajz.png')] bg-cover bg-center h-256">
+      <div className="w-full bg-[url('./assets/mettrinrajz.png')] bg-cover bg-center md:h-256 h-64">
       </div>
     </>
   )
