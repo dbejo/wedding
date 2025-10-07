@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import selfie from './assets/selfie.jpeg'
+import selfie from './assets/selfie.webp'
 import selfie1 from './assets/selfie1.jpeg'
 import selfie2 from './assets/selfie2.jpeg'
 import selfie3 from './assets/selfie3.jpeg'
@@ -55,6 +55,8 @@ function App() {
           <div className={`md:w-128 w-80 md:h-179 h-112 rounded-full transition-shadow duration-700 ${mainImgLoaded ? "shadow-xl" : "shadow-none"} relative`}>
             <img
               src={selfie}
+              loading='eager'
+              fetchPriority="high"
               className={`w-full h-full rounded-full object-cover transition-opacity duration-700 ${mainImgLoaded ? "opacity-100" : "opacity-0"}`}
               onLoad={() => setMainImgLoaded(true)}
             />
