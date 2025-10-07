@@ -8,6 +8,7 @@ import mettrin1 from './assets/mettrin1.jpg'
 import './App.css'
 import AccommodationCard from './AccomodationCard';
 import Faq from './Faq';
+import ProgramImage from './ProgramImage'
 
 interface TimeLeft {
   days: number;
@@ -34,6 +35,7 @@ function App() {
   const mainColor = "#99ccff";
   const goldColor = "#D4AF37";
   const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(calculateTimeLeft());
+  const [mainImgLoaded, setMainImgLoaded] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -48,15 +50,24 @@ function App() {
       <div className="flex flex-col items-center min-h-screen justify-evenly mt-10 mx-5">
         <div>
           <div className="md:w-128 w-full flex justify-end">
-            <h1 style={{ color: goldColor }} className={`text-4xl font-medium -mb-5 -mr-2 z-10 font-[cursive]`}>Eszter<br />&nbsp;&nbsp;& Dávid</h1>
+            <h1 style={{ color: goldColor }} className={`text-4xl font-medium -mb-5 -mr-2 z-10 font-[cursive] transition-opacity duration-700 ${mainImgLoaded ? "opacity-100" : "opacity-0"}`}>Eszter<br />&nbsp;&nbsp;& Dávid</h1>
           </div>
-          <img src={selfie} className="md:w-128 w-full rounded-full shadow-xl" />
+          <div className={`md:w-128 w-80 md:h-179 h-112 rounded-full transition-shadow duration-700 ${mainImgLoaded ? "shadow-xl" : "shadow-none"} relative`}>
+            <img
+              src={selfie}
+              className={`w-full h-full rounded-full object-cover transition-opacity duration-700 ${mainImgLoaded ? "opacity-100" : "opacity-0"}`}
+              onLoad={() => setMainImgLoaded(true)}
+            />
+          </div>
           <div className="md:w-128 w-full flex justify-start">
-            <h2 style={{ color: goldColor }} className={`text-4xl font-medium -mt-5 -ml-2 font-[cursive]`}>&nbsp;&nbsp;2026<br />05.19</h2>
+            <h2 style={{ color: goldColor }} className={`text-4xl font-medium -mt-5 -ml-2 font-[cursive] transition-opacity duration-700 ${mainImgLoaded ? "opacity-100" : "opacity-0"}`}>&nbsp;&nbsp;2026<br />05.19</h2>
           </div>
         </div>
         <div className="md:w-2/3 w-full flex flex-col justify-start gap-5">
-          <a href="#rsvp-form" className='mx-auto my-5'><button type='button' style={{ backgroundColor: mainColor }} className='text-white py-3 px-5 rounded-full text-xl hover:cursor-pointer hover:grayscale-30 transition-all shadow-lg'>Visszajelzés</button></a>
+          <a href="#rsvp-form" className='mx-auto my-5'>
+            <button type='button' style={{ backgroundColor: mainColor }} className={`text-white py-3 px-5 rounded-full text-xl hover:cursor-pointer hover:grayscale-30 transition-all shadow-lg transition-opacity duration-700 ${mainImgLoaded ? "opacity-100" : "opacity-0"
+              }`}>Visszajelzés</button>
+          </a>
           <p className='text-lg text-justify leading-relaxed font-thin'>Szeretnénk, ha ezen a különleges napon velünk ünnepelnétek, és együtt osztoznánk az örömben és boldogságban. Nagyon fontos számunkra, hogy a számunkra legkedvesebb emberek körében élhessük át ezt a pillanatot, hiszen nélkületek nem lenne teljes az ünnep.</p>
         </div>
       </div >
@@ -72,7 +83,7 @@ function App() {
             </div>
             <div className="hidden md:block border-l border-gray-300 h-9/10 mx-4"></div>
             <div className='md:w-1/2 w-full flex justify-center'>
-              <img src={selfie1} className="w-84 md:w-96 h-84 md:h-96 object-cover rounded-full shadow-xl" />
+              <ProgramImage src={selfie1} />
             </div>
           </div>
           <div className='flex flex-col md:flex-row-reverse w-full justify-evenly items-center'>
@@ -82,7 +93,7 @@ function App() {
             </div>
             <div className="hidden md:block border-l border-gray-300 h-9/10 mx-4"></div>
             <div className='md:w-1/2 w-full flex justify-center'>
-              <img src={selfie2} className="w-84 md:w-96 h-84 md:h-96 object-cover rounded-full shadow-xl" />
+              <ProgramImage src={selfie2} />
             </div>
           </div>
           <div className='flex flex-col md:flex-row w-full justify-evenly items-center'>
@@ -92,7 +103,7 @@ function App() {
             </div>
             <div className="hidden md:block border-l border-gray-300 h-9/10 mx-4"></div>
             <div className='md:w-1/2 w-full flex justify-center'>
-              <img src={selfie3} className="w-84 md:w-96 h-84 md:h-96 object-cover rounded-full shadow-xl" />
+              <ProgramImage src={selfie3} />
             </div>
           </div>
           <div className='flex flex-col md:flex-row-reverse w-full justify-evenly items-center'>
@@ -102,7 +113,7 @@ function App() {
             </div>
             <div className="hidden md:block border-l border-gray-300 h-9/10 mx-4"></div>
             <div className='md:w-1/2 w-full flex justify-center'>
-              <img src={selfie4} className="w-84 md:w-96 h-84 md:h-96 object-cover rounded-full shadow-xl" />
+              <ProgramImage src={selfie4} />
             </div>
           </div>
         </div>
