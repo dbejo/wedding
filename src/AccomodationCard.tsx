@@ -1,4 +1,5 @@
 import React from "react";
+import ImageWithPlaceholder from "./ImageWithPlaceHolder";
 
 type AccommodationCardProps = {
     title: string;
@@ -20,7 +21,7 @@ const AccommodationCard: React.FC<AccommodationCardProps> = ({
     return (
         <div className="w-full h-full min-h-[420px] rounded-2xl shadow-md bg-white border border-gray-200 overflow-hidden flex flex-col">
             {/* Image */}
-            <img src={imageSrc} alt={imageAlt} className="w-full h-48 object-cover" />
+            <ImageWithPlaceholder src={imageSrc} alt={imageAlt} imgClassName="w-full h-48" shadow={false} />
 
             {/* Content */}
             <div className="p-6 flex flex-col justify-between flex-1">
