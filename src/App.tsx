@@ -141,7 +141,17 @@ function App() {
       </div>
       <div className='flex justify-center mb-10 mx-5'>
         <div className='md:w-2/3 w-full flex flex-col text-gray-700 gap-5'>
-          <Faq question="Mi a dress code?" answer="Kérjük, hogy az esküvőre elegáns, de kényelmes öltözetben érkezzetek. A hölgyek számára ajánlott a hosszú alkalmi ruha, az uraknak pedig zakó viselése. A fehér és a piros színek kerülendők, mivel ezek a menyasszony ruháját idézhetik." />
+          <Faq question="Mi a dress code?" answer="Kérjük, hogy az esküvőre elegáns, de kényelmes öltözetben érkezzetek. A hölgyek számára ajánlott a hosszú alkalmi ruha, az uraknak pedig zakó viselése. A fehér és a piros színek kerülendők, mivel ezek a menyasszony ruháját idézhetik.">
+            <div className="flex items-center space-x-[-10px] my-4 justify-center">
+              <div className="md:w-16 w-12 md:h-16 h-12 bg-[#fdcc90] shadow-lg rounded-full"></div>
+              <div className="md:w-16 w-12 md:h-16 h-12 bg-[#fdf0a1] shadow-lg rounded-full"></div>
+              <div className="md:w-16 w-12 md:h-16 h-12 bg-[#b0c59d] shadow-lg rounded-full"></div>
+              <div className="md:w-16 w-12 md:h-16 h-12 bg-[#8db6d5] shadow-lg rounded-full"></div>
+              <div className="md:w-16 w-12 md:h-16 h-12 bg-[#fcd3d8] shadow-lg rounded-full"></div>
+              <div className="md:w-16 w-12 md:h-16 h-12 bg-[#e7d5fc] shadow-lg rounded-full"></div>
+              <div className="md:w-16 w-12 md:h-16 h-12 bg-[#ef7aa6] shadow-lg rounded-full"></div>
+            </div>
+          </Faq>
           <Faq question="Hol lehet parkolni?" answer="A rendezvény helyszíne mellett található egy parkoló, ahol a vendégek ingyenesen parkolhatnak." />
           <Faq question="Mit kértek ajándékba?" answer="Tárgyi ajándékot nem kérünk, eladó azonban a menyasszony: egy táncért cserébe bárki viheti egy körre. A menyasszonytáncon összegyűlt adományok pedig a nászutunk alapját adják majd." />
         </div>
