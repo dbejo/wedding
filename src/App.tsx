@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
-import selfie from './assets/selfie.webp'
-import selfie1 from './assets/selfie1.jpeg'
-import selfie2 from './assets/selfie2.jpeg'
-import selfie3 from './assets/selfie3.jpeg'
-import selfie4 from './assets/selfie4.jpeg'
+import img1 from './assets/img1.jpg'
+import img2 from './assets/img2.jpg'
+import img3 from './assets/img3.jpg'
+import img4 from './assets/img4.jpg'
+import img5 from './assets/img5.jpg'
 import mettrin1 from './assets/mettrin1.webp'
 import './App.css'
 import AccommodationCard from './AccomodationCard';
@@ -48,7 +48,7 @@ function App() {
 
   return (
     <>
-      <HeroSection imgSrc={selfie} textColor={goldColor} mainColor={mainColor} />
+      <HeroSection imgSrc={img1} textColor={goldColor} mainColor={mainColor} />
       <div style={{ backgroundColor: mainColor }} className='w-full h-40 items-center flex justify-center my-10 shadow-lg'>
         <h2 className="text-4xl font-bold text-center my-5 text-white">Esküvői Program</h2>
       </div>
@@ -61,7 +61,7 @@ function App() {
             </div>
             <div className="hidden md:block border-l border-gray-300 h-9/10 mx-4"></div>
             <div className='md:w-1/2 w-full flex justify-center'>
-              <ProgramImage src={selfie1} />
+              <ProgramImage src={img2} />
             </div>
           </div>
           <div className='flex flex-col md:flex-row-reverse w-full justify-evenly items-center'>
@@ -71,7 +71,7 @@ function App() {
             </div>
             <div className="hidden md:block border-l border-gray-300 h-9/10 mx-4"></div>
             <div className='md:w-1/2 w-full flex justify-center'>
-              <ProgramImage src={selfie2} />
+              <ProgramImage src={img3} />
             </div>
           </div>
           <div className='flex flex-col md:flex-row w-full justify-evenly items-center'>
@@ -81,7 +81,7 @@ function App() {
             </div>
             <div className="hidden md:block border-l border-gray-300 h-9/10 mx-4"></div>
             <div className='md:w-1/2 w-full flex justify-center'>
-              <ProgramImage src={selfie3} />
+              <ProgramImage src={img4} />
             </div>
           </div>
           <div className='flex flex-col md:flex-row-reverse w-full justify-evenly items-center'>
@@ -91,7 +91,7 @@ function App() {
             </div>
             <div className="hidden md:block border-l border-gray-300 h-9/10 mx-4"></div>
             <div className='md:w-1/2 w-full flex justify-center'>
-              <ProgramImage src={selfie4} />
+              <ProgramImage src={img5} />
             </div>
           </div>
         </div>
