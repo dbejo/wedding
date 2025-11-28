@@ -153,7 +153,7 @@ function App() {
             </div>
           </Faq>
           <Faq question="Hol lehet parkolni?" answer="A rendezvény helyszíne mellett található egy parkoló, ahol a vendégek ingyenesen parkolhatnak." />
-          <Faq question="Mit kértek ajándékba?" answer="Tárgyi ajándékot nem kérünk, eladó azonban a menyasszony: egy táncért cserébe bárki viheti egy körre. A menyasszonytáncon összegyűlt adományok pedig a nászutunk alapját adják majd." />
+          <Faq question="Mit kérünk ajándékba?" answer="Tárgyi ajándékot nem kérünk, eladó azonban a menyasszony: egy táncért cserébe bárki viheti egy körre. A menyasszonytáncon összegyűlt adományok pedig a nászutunk alapját adják majd." />
         </div>
       </div>
       <div className="flex flex-col items-center min-h-screen justify-evenly">
