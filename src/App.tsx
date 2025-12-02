@@ -158,7 +158,7 @@ function App() {
       </div>
       <div className="flex flex-col items-center min-h-screen justify-evenly">
         <div className="md:w-2/3 w-full flex flex-col justify-evenly flex-1 my-5">
-          <p className='text-lg text-center font-thin'>Kérjük, hogy részvételi szándékotokat a következő űrlap kitöltésével jelezzétek:</p>
+          <p className='text-lg text-center font-thin mx-5'>Kérjük, hogy részvételi szándékotokat a következő űrlap kitöltésével jelezzétek:</p>
           <iframe id='rsvp-form' src="https://docs.google.com/forms/d/e/1FAIpQLScYw5FcQ8lFwXr8iPbwPGoAA3cDRgf-qjbHDDHPD2Ku3H-jiA/viewform?embedded=true" className='md:h-[1000px] h-[1300px] w-full border-0'>Betöltés…</iframe>
         </div>
       </div>
