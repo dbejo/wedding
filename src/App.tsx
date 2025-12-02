@@ -56,7 +56,7 @@ function App() {
         <div className='md:w-2/3 w-full flex flex-col mb-10'>
           <div className='flex flex-col md:flex-row w-full justify-evenly items-center'>
             <div className='md:w-1/2 w-full'>
-              <p style={{ color: goldColor }} className={`text-4xl font-bold text-center my-5 font-[cursive]`}>16:00</p>
+              <p style={{ color: goldColor }} className={`text-4xl font-bold text-center my-5 font-[cursive]`}>15:00</p>
               <p className="text-4xl text-center my-5 text-gray-700">Vendégvárás</p>
             </div>
             <div className="hidden md:block border-l border-gray-300 h-9/10 mx-4"></div>
@@ -66,7 +66,7 @@ function App() {
           </div>
           <div className='flex flex-col md:flex-row-reverse w-full justify-evenly items-center'>
             <div className='md:w-1/2 w-full'>
-              <p style={{ color: goldColor }} className={`text-4xl font-bold text-center my-5 font-[cursive]`}>17:00</p>
+              <p style={{ color: goldColor }} className={`text-4xl font-bold text-center my-5 font-[cursive]`}>16:00</p>
               <p className="text-4xl  text-center my-5 text-gray-700">Szertartás</p>
             </div>
             <div className="hidden md:block border-l border-gray-300 h-9/10 mx-4"></div>
@@ -76,7 +76,7 @@ function App() {
           </div>
           <div className='flex flex-col md:flex-row w-full justify-evenly items-center'>
             <div className='md:w-1/2 w-full'>
-              <p style={{ color: goldColor }} className={`text-4xl font-bold text-center my-5 font-[cursive]`}>18:00</p>
+              <p style={{ color: goldColor }} className={`text-4xl font-bold text-center my-5 font-[cursive]`}>17:00</p>
               <p className="text-4xl text-center my-5 text-gray-700">Vacsora</p>
             </div>
             <div className="hidden md:block border-l border-gray-300 h-9/10 mx-4"></div>
