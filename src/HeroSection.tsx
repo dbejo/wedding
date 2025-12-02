@@ -12,7 +12,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ imgSrc, textColor, mainColor 
         <div className="flex flex-col items-center min-h-screen justify-evenly mt-10 mx-5">
             <div>
                 <div className="md:w-128 w-full flex justify-end">
-                    <h1 style={{ color: textColor }} className={`text-4xl font-medium -mb-5 -mr-2 z-10 font-[cursive] transition-opacity duration-700 ${imgLoaded ? "opacity-100" : "opacity-0"}`}>Eszter<br />&nbsp;&nbsp;& Dávid</h1>
+                    <h1 style={{ color: textColor, fontFamily: 'Tangerine' }} className={`text-5xl md:text-6xl font-bold -mb-5 -mr-2 z-10 transition-opacity duration-700 ${imgLoaded ? "opacity-100" : "opacity-0"}`}>Eszter<br />&nbsp;&nbsp;& Dávid</h1>
                 </div>
                 <div className={`md:w-128 w-80 md:h-179 h-112 rounded-full transition-shadow duration-700 ${imgLoaded ? "shadow-xl" : "shadow-none"} relative`}>
                     <img
@@ -24,7 +24,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ imgSrc, textColor, mainColor 
                     />
                 </div>
                 <div className="md:w-128 w-full flex justify-start">
-                    <h2 style={{ color: textColor }} className={`text-4xl font-medium -mt-5 -ml-2 font-[cursive] transition-opacity duration-700 ${imgLoaded ? "opacity-100" : "opacity-0"}`}>&nbsp;&nbsp;2026<br />05.19</h2>
+                    <h2 style={{ color: textColor, fontFamily: 'Tangerine' }} className={`text-5xl md:text-6xl font-bold -mt-5 -ml-2 transition-opacity duration-700 ${imgLoaded ? "opacity-100" : "opacity-0"}`}>&nbsp;&nbsp;2026<br />05.19</h2>
                 </div>
             </div>
             <div className="md:w-2/3 w-full flex flex-col justify-start gap-5">
