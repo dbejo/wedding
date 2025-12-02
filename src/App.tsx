@@ -76,7 +76,7 @@ function App() {
           </div>
           <div className='flex flex-col md:flex-row w-full justify-evenly items-center'>
             <div className='md:w-1/2 w-full'>
-              <p style={{ color: goldColor, fontFamily: 'Tangerine' }} className={`text-6xl font-bold text-center my-5`}>17:00</p>
+              <p style={{ color: goldColor, fontFamily: 'Tangerine' }} className={`text-6xl font-bold text-center my-5`}>18:00</p>
               <p className="text-4xl text-center my-5 text-gray-700">Vacsora</p>
             </div>
             <div className="hidden md:block border-l border-gray-300 h-9/10 mx-4"></div>
@@ -158,7 +158,7 @@ function App() {
       </div>
       <div className="flex flex-col items-center min-h-screen justify-evenly">
         <div className="md:w-2/3 w-full flex flex-col justify-evenly flex-1 my-5">
-          <p className='text-lg text-center font-thin mx-5'>Kérjük, hogy részvételi szándékotokat a következő űrlap kitöltésével jelezzétek:</p>
+          <p className='text-lg text-center font-thin mx-3'>Kérjük, hogy részvételi szándékotokat a következő űrlap kitöltésével jelezzétek:</p>
           <iframe id='rsvp-form' src="https://docs.google.com/forms/d/e/1FAIpQLScYw5FcQ8lFwXr8iPbwPGoAA3cDRgf-qjbHDDHPD2Ku3H-jiA/viewform?embedded=true" className='md:h-[1000px] h-[1300px] w-full border-0'>Betöltés…</iframe>
         </div>
       </div>
